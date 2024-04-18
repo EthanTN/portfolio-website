@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Favorites</title>
+    <link href="https://fonts.googleapis.com/css2?family=Gill+Sans:wght@400;600&display=swap" rel="stylesheet">
+    <style>
+        /* Insert the CSS you provided here */
+        body {
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            color: #333;
+            background: #d9eff0; /* Light blue background */
+            width: 100%;
+            overflow-x: hidden;
+        }
+
+        header {
+            background: #9bc8c9; /* Soft green */
+            color: #333;
+            padding: 20px 20px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 100%;
+        }
+
+        .header-content {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 100%;
+            /* max-width: 1000px; */
+            margin: auto;
+        }
+
+        .favorites {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            padding: 20px;
+            background: #bbceb8; /* Soft muted green */
+        }
+
+        .favorite-item {
+            text-align: center;
+            width: 400px;
+            margin: 20px;
+            background: #fff;
+            padding: 10px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            transform: translateY(30px);
+            animation: fadeInUp 2s ease-out forwards;
+        }
+
+        @keyframes fadeInScaleUp {
+            from {
+                opacity: 0;
+                transform: scale(0.5); /* Start from half the size */
+            }
+            to {
+                opacity: 1;
+                transform: scale(1); /* Scale up to full size */
+            }
+        }
+
+        img {
+            width: 100%;
+            max-width: 300px;
+            height: auto;
+            border-radius: 8px;
+            animation: fadeInScaleUp 3s ease-out forwards; /* Apply the animation to the image */
+        }
+
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @media (max-width: 768px) {
+            .favorites {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .favorite-item {
+                width: 80%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <h1>My Favorite Movies and Video Games</h1>
+        </div>
+    </header>
+
+    <section class="favorites">
+        <!-- Movies -->
+        <h2>Movies</h2>
+        <div class="favorite-item">
+           
+            <img src="../assets/images/john-wick-movie-bg01-portrait.jpg" alt="Movie 1">
+            <h3>John Wick  Franchise</h3>
+            <p>The John Wick franchise is a series of action-thriller films starring Keanu Reeves as the titular character, John Wick, 
+                a retired but deadly hitman seeking vengeance for the death of his beloved dog, a final gift from his deceased wife. 
+                The narrative unfolds in a stylized, hyper-violent universe, where an elaborate underworld based on a rigid code of conduct is pervasive. 
+                The series is famed for its intricately choreographed fight scenes, stylish cinematography, and a blend of neo-noir aesthetics.</p>
+        </div>
+        <div class="favorite-item">
+            <img src="../assets/images/The_Imitation_Game.jpg" alt="Movie 2">
+            <h3>The Imitation Game</h3>
+            <p>"The Imitation Game" is a historical drama that premiered in 2014, directed by Morten Tyldum and starring Benedict Cumberbatch as Alan Turing. The film is based on the real-life story of Turing, a pioneering British computer scientist and mathematician who played a pivotal role during World War II.</p>
+
+            <p> The movie centers on Turing's efforts to crack the German Enigma machine, which was believed to be unbreakable. Turing and his team at Bletchley Park, the British government's covert intelligence agency, work against time to build a machine capable of decoding the thousands of messages that the German forces encrypted with the Enigma machine each day.</p>
+        </div>
+        <div class="favorite-item">
+            <img src="../assets/images/the_midium.jpg" alt="Movie 2">
+            <h3>The Medium (2021)</h3>
+            <p>"The Medium" is a 2021 horror film directed by Banjong Pisanthanakun and co-written by Pisanthanakun and the acclaimed South Korean filmmaker, Na Hong-jin, who also served as a producer. The film is presented in a documentary-style format, which adds to its eerie and realistic atmosphere.</p>
+
+            <p>Set in the rural landscapes of Northeast Thailand, the story revolves around a shaman named Nim, who inherited her spiritual abilities from her family's bloodline, which is believed to be under the protection of a powerful goddess. The film begins with a documentary crew setting out to explore and capture the daily spiritual practices of Nim and the impact of shamanism on her community.</p>
+        </div>
+    </section>
+    <section class="favorites">
+     
+
+        <!-- Video Games -->
+        <h2>Games</h2>
+        <div class="favorite-item">
+            
+            <img src="../assets/images/god_of_war.jpg_large" alt="Game 1">
+            <h3>God of War Franchise</h3>
+            <p>The games are set in a mythological universe that blends elements from ancient Greek and, in later games, Norse mythology. The protagonist, Kratos, is a Spartan warrior who initially serves the Greek gods to rid himself of the nightmares associated with his past misdeeds. 
+                Over the series, Kratos seeks vengeance against the gods and other mythical beings who have wronged him, leading to epic battles and the toppling of deities.</p>
+            <p>Each game in the series has built upon its predecessors, expanding the mythological universe and refining its gameplay mechanics, making "God of War" a benchmark for storytelling and action in video games.</p>
+        </div>
+        <div class="favorite-item">
+            <img src="../assets/images/batman_arkham_knight.jpg" alt="Game 2">
+            <h3>Batman: Arkham Knight</h3>
+            <p>"Batman: Arkham Knight" is an action-adventure video game developed by Rocksteady Studios and published by Warner Bros. Interactive Entertainment. Released in 2015, it is the fourth main installment in the popular "Batman: Arkham" series. The game is set in a fully open-world Gotham City, larger than the maps of previous entries, and allows players to experience the conclusion of the acclaimed Arkham trilogy.</p>
+            <p>The narrative follows Batman as he confronts the ultimate threat against Gotham City, which Scarecrow has put in peril by uniting Batman&#39;s enemies and threatening to unleash a potent fear toxin. The game introduces a mysterious new character, the Arkham Knight, who has a personal vendetta against Batman and commands a vast militia.</p>
+        </div>
+        <div class="favorite-item">
+            <img src="../assets/images/dying_light.jpg" alt="Game 2">
+            <h3>Dying Light 1 and 2</h3>
+            <p>"Dying Light" is an open-world first-person survival horror game developed by Techland and released in 2015. Set in a vast and dangerous urban environment devastated by a mysterious virus, the game is centered around the city of Harran, a quarantined zone where infected hosts and the uninfected survivors are trapped together. Players assume the role of Kyle Crane, an undercover operative sent to infiltrate the quarantine zone. The game is notable for its day-night cycle, which drastically changes the gameplay: during the day, players can scavenge for supplies and craft weapons to defend against the infected, while at night, the infected become more aggressive and dangerous, and even more lethal predators emerge.</p>
+            <p>Released in 2022, "Dying Light 2 Stay Human" builds upon the foundations of its predecessor with an enhanced focus on narrative and player choices. Set 15 years after the first game, it introduces a new protagonist, Aiden Caldwell, equipped with parkour and combat skills that make him a valuable asset in a crumbling world. The game expands on the first by offering a larger open world filled with new factions and evolving storylines that react to player decisions, affecting the city&#39;s layout and the day-to-day life of its inhabitants.</p>
+        </div>
+
+    </section>
+    <footer>
+        <p style="text-align:center;">Above is a compilation of my favorite movies and games. If you haven't had the opportunity to explore them yet, I highly recommend you do so. Thank you for checking out my list!</p>
+    </footer>
+</body>
+</html>

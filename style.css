@@ -1,0 +1,191 @@
+/* General body styles */
+body {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    color: #333;
+    background: #d9eff0; /* Light blue background */
+    width: 100%;
+    overflow-x: hidden;
+}
+
+/* Header styling */
+header {
+    background: #9bc8c9; /* Soft green */
+    color: #333;
+    padding: 20px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+.header-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+}
+.page-title{
+    margin-left: 28%;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 6vw;
+    width: 100%;
+    opacity: 0;
+    transform: translateY(30px); /* Starts the image 30 pixels below its final position */
+    animation: fadeInUp 2s ease-out forwards;
+}
+.page-sub-title{
+    float: right;
+    font-size: 25px;
+    margin-top: -30px;
+    margin-left: 45%;
+    /* width: 100%; */
+    opacity: 0;
+    transform: translateY(30px); /* Starts the image 30 pixels below its final position */
+    animation: fadeInUp 2s ease-out forwards;
+}
+
+.profile-img {
+    display: inline-block;
+    margin: -320px 70px 20px 7%;
+    width: 30%;
+    height: 40%;
+    margin-right: 20px;
+    opacity: 0;
+    transform: translateY(30px); /* Starts the image 30 pixels below its final position */
+    animation: fadeInUp 2s ease-out forwards;
+}
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0); /* Ends at the natural position of the image */
+    }
+}
+
+/* Navigation styles */
+nav {
+    background: #d0e1cd; /* Another shade of light green */
+    color: #333;
+    text-align: center;
+    padding: 10px 0;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+nav ul li {
+    margin: 0 20px;
+}
+
+nav ul li a {
+    color: #333;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+/* Main content area */
+main {
+    padding: 20px;
+    background: #bbceb8; /* Soft muted green */
+}
+.about-title{
+    font-size: 60px;
+    /* margin: 0px 0px 0px 0px; */
+}
+.about {
+    background: #fff;
+    padding: 20px;
+    margin: -20% 0px 50px 42%;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    /* display: flex; */
+    align-items: center;
+    justify-content: space-between;
+    width: 50%;
+    opacity: 0; /* Start with the section hidden */
+    transform: translateX(50px); /* Start 50 pixels to the right of its final position */
+    animation: fadeInRight 1s ease-out 1.5s forwards; 
+}
+.resume {
+    background: #fff;
+    padding: 20px;
+    margin-left: 7%;
+    margin-bottom: 50px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    align-items: center;
+    justify-content: space-between;
+    width: 50%;
+    opacity: 0; /* Start with the section hidden */
+    transform: translateX(50px); /* Start 50 pixels to the right of its final position */
+    animation: fadeInLeft 1s ease-out 1.5s forwards; 
+}
+@keyframes fadeInRight {
+    from {
+        opacity: 0;
+        transform: translateX(50px); /* Initial state from the right */
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0); /* Move to its final position */
+    }
+}
+@keyframes fadeInLeft {
+    from {
+        opacity: 0;
+        transform: translateX(-50px); /* Initial state from the right */
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0); /* Move to its final position */
+    }
+}
+.project img {
+    width: 300px;
+    height: auto;
+    margin-right: 20px;
+}
+
+.project-info {
+    flex: 1;
+}
+
+/* Footer styling */
+footer {
+    text-align: center;
+    padding: 20px 20px;
+    background-color: #9fbfab; /* Muted green */
+    color: #333;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    header, .header-content, nav ul {
+        flex-direction: column;
+    }
+
+    .page-title {
+        margin-left: 0; /* Reset left margin */
+    }
+
+    .profile-img {
+        margin: 20px auto; /* Center image and adjust margin */
+    }
+
+    .about, .resume {
+        width: 80%; /* Full width in mobile */
+        margin: 20px auto; /* Reduced margin */
+    }
+}
