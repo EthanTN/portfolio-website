@@ -132,6 +132,19 @@ main {
     transform: translateX(50px); /* Start 50 pixels to the right of its final position */
     animation: fadeInLeft 1s ease-out 1.5s forwards; 
 }
+.showcase {
+    background: #fff;
+    padding: 20px;
+    margin: 0 0px 50px 42%;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    /* display: flex; */
+    align-items: center;
+    justify-content: space-between;
+    width: 50%;
+    opacity: 0; /* Start with the section hidden */
+    transform: translateX(50px); /* Start 50 pixels to the right of its final position */
+    animation: fadeInRight 1s ease-out 1.5s forwards; 
+}
 @keyframes fadeInRight {
     from {
         opacity: 0;
@@ -157,6 +170,9 @@ main {
     height: auto;
     margin-right: 20px;
 }
+.logos-img{
+    height: 150px;
+}
 
 .project-info {
     flex: 1;
@@ -168,6 +184,7 @@ footer {
     padding: 20px 20px;
     background-color: #9fbfab; /* Muted green */
     color: #333;
+    width: 100%;
 }
 
 /* Responsive adjustments */
