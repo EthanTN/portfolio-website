@@ -201,7 +201,7 @@ footer {
         margin: 20px auto; /* Center image and adjust margin */
     }
 
-    .about, .resume {
+    .about, .resume, .showcase {
         width: 80%; /* Full width in mobile */
         margin: 20px auto; /* Reduced margin */
     }
